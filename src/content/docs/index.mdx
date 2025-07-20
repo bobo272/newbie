@@ -1,16 +1,19 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: 成贤神秘小站点
+description: 神秘等于不神秘
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: 欢迎新生！探索校园生活，加入技术社团！
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/houston.webp # 替换为你的图片，存放在 public/assets/
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: 查看新生读物
+      link: /guides/welcome/
       icon: right-arrow
-    - text: Read the Starlight docs
+    - text: 加入计协
+      link: /recruitment/
+      icon: star
+    - text: 了解 Starlight
       link: https://starlight.astro.build
       icon: external
       variant: minimal
@@ -18,19 +21,15 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## 开始你的大学之旅
+
+欢迎来到大学！我们为你准备了实用的新生指南，帮助你快速适应校园生活。同时，计算机协会正在招新，加入我们，开启技术探索之旅！
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="新生读物" icon="book-open">
+		浏览 [新生读物](/guide/welcome/)，了解学习、生活和社交的实用建议。
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="计协招新" icon="star">
+		加入 [计算机协会](/recruitment/)，参与编程活动，结识技术爱好者。
 	</Card>
 </CardGrid>

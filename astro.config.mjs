@@ -6,21 +6,27 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: '成贤神秘小站点',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/qlsalj/newbie' }],
+			locales: {
+				root: {
+					label: '简体中文',
+					lang: 'zh-CN',
+				},
+			},
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: '新生读物',
+					autogenerate: { directory: 'guides' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: '计协招新',
+					link: '/recruitment',
 				},
 			],
+			editLink: {
+				baseUrl: 'https://github.com/qlsalj/newbie/edit/main/src/content/docs/',
+			},
 		}),
 	],
 });
